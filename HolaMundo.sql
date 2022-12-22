@@ -1,0 +1,51 @@
+CREATE DATABASE ejemplo;
+
+USE ejemplo;
+
+CREATE TABLE tabla1 (
+  id INT NOT NULL AUTO_INCREMENT,
+  columna1 VARCHAR(255) NOT NULL,
+  columna2 VARCHAR(255) NOT NULL,
+  columna3 VARCHAR(255) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE tabla2 (
+  id INT NOT NULL AUTO_INCREMENT,
+  columna1 VARCHAR(255) NOT NULL,
+  columna2 VARCHAR(255) NOT NULL,
+  columna3 VARCHAR(255) NOT NULL,
+  tabla1_id INT NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (tabla1_id) REFERENCES tabla1(id)
+);
+
+CREATE TABLE tabla3 (
+  id INT NOT NULL AUTO_INCREMENT,
+  columna1 VARCHAR(255) NOT NULL,
+  columna2 VARCHAR(255) NOT NULL,
+  columna3 VARCHAR(255) NOT NULL,
+  tabla2_id INT NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (tabla2_id) REFERENCES tabla2(id)
+);
+
+CREATE TABLE tabla4 (
+  id INT NOT NULL AUTO_INCREMENT,
+  columna1 VARCHAR(255) NOT NULL,
+  columna2 VARCHAR(255) NOT NULL,
+  columna3 VARCHAR(255) NOT NULL,
+  tabla3_id INT NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (tabla3_id) REFERENCES tabla3(id)
+);
+
+CREATE TABLE tabla5 (
+  id INT NOT NULL AUTO_INCREMENT,
+  columna1 VARCHAR(255) NOT NULL,
+  columna2 VARCHAR(255) NOT NULL,
+  columna3 VARCHAR(255) NOT NULL,
+  tabla4_id INT NOT NULL,
+  PRIMARY KEY (id),
+  FOREIGN KEY (tabla4_id) REFERENCES tabla4(id)
+);
