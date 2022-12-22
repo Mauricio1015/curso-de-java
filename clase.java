@@ -93,7 +93,7 @@ number2 = operadore.nextFloat();
 
  //Conbinados con asignacion
 int manu = 10;
-manu = manu + 5;
+manu =+ 5; 
 System.out.print(manu);
 }
 
