@@ -95,6 +95,35 @@ number2 = operadore.nextFloat();
 int manu = 10;
 manu =+ 5; 
 System.out.print(manu);
+
+//Incremento o drecemento 
+//++ o --
+manu++;
+manu--;
+
+//Clase Math
+
+//sacar la raiz cuadrada de un numero sqrt
+double raiz = Math.sqrt(9);
+System.out.println(raiz);
+//Nota la forma antrios es utilisada para bariables double si se necesita un int
+// se debe agregar algo más
+int rais = (int)Math.sqrt(9);// de esta manera se puede almacenar una variable de tipo etero
+System.out.println(rais);
+
+//elevacion pow
+double base = 5, exponente = 2;
+double resul = Math.pow(base, exponente);
+System.out.println(resul);
+
+//redondear round
+double nu11 = 4.55;
+long erul = Math.round(nu11);
+System.out.println(erul);
+
+//Ramdom random
+double Ramdom = Math.random();
+System.out.println(Ramdom);
 }
 
 //Tipos de datos no primitivos 
