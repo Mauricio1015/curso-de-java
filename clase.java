@@ -124,6 +124,35 @@ System.out.println(erul);
 //Ramdom random
 double Ramdom = Math.random();
 System.out.println(Ramdom);
+
+//Condicionales if y if else
+int  datous, dato = 5;
+
+datous = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero: "));
+if(datous == dato){
+  JOptionPane.showMessageDialog(null, "el numeo es 5");
+}
+else{
+  JOptionPane.showMessageDialog(null, "El numero es diferente " );
+}
+
+//Condicionales switch
+int torres;
+torres = Integer.parseInt(JOptionPane.showInputDialog("digite un numero entre 1 y 5: "));
+switch(torres){
+    case 1: JOptionPane.showMessageDialog(null, "es numero 1");
+   break;
+   case 2: JOptionPane.showMessageDialog(null, "es el numero 2" );
+   break;
+   case 3: JOptionPane.showMessageDialog(null, "es el numero 3" );
+   break;
+   case 4: JOptionPane.showMessageDialog(null, "es el numero 4" );
+   break;
+   case 5: JOptionPane.showMessageDialog(null, "es el numero 5" );
+   break;
+  default: JOptionPane.showMessageDialog(null, "el numero no esta en el rrango");
+}
+
 }
 
 //Tipos de datos no primitivos 
@@ -143,7 +172,7 @@ System.out.println(Ramdom);
 //entrada y saida de datos con JOptionPane
 
 //operadodes arigmeticos
-//
+//el operaror para saber si una var es distinta a otra es !=
 }
 
 
