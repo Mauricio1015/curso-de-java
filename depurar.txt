@@ -1,0 +1,2 @@
+en la misma carpeta del archivo copiar la siguien instruccion
+"javac nombre_del_archivo.java"
