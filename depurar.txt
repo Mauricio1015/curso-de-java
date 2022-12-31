@@ -1,2 +1,3 @@
 en la misma carpeta del archivo copiar la siguien instruccion
-"javac nombre_del_archivo.java"
+"javac nombre_del_archivo.java", esdo debe craear un archivo con terminacion .clsss
+para ejecutar ese archivo de debe copiar "java nombre_del_archivo" sin extencion del archivo
